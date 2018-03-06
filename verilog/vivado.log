@@ -1,0 +1,126 @@
+#-----------------------------------------------------------
+# Vivado v2017.1_sdx (64-bit)
+# SW Build 1915620 on Thu Jun 22 17:54:59 MDT 2017
+# IP Build 1908669 on Thu Jun 22 19:20:41 MDT 2017
+# Start of session at: Mon Mar  5 17:14:02 2018
+# Process ID: 7838
+# Current directory: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog
+# Command line: vivado -source xillydemo-vivado.tcl
+# Log file: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado.log
+# Journal file: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/cho/.Xilinx/Vivado/Vivado_init.tcl'
+INFO: [Common 17-1460] Use of init.tcl in /opt2/Xilinx/SDx/2017.1/Vivado/scripts/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script '/opt2/Xilinx/SDx/2017.1/Vivado/scripts/init.tcl'
+16 Beta devices matching pattern found, 16 enabled.
+Loaded SDSoC Platform Tcl Library
+start_gui
+source xillydemo-vivado.tcl
+# set proj_name xillydemo
+# set proj_dir [file normalize [file dirname [info script]]/vivado]
+# set thepart "xc7k325tffg900-2"
+# set pcie_vivado pcie_k7_vivado
+# set pcie pcie_k7_8x
+# set essentials_dir [file normalize "$proj_dir/../../vivado-essentials"]
+# create_project $proj_name "$proj_dir/"
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt2/Xilinx/SDx/2017.1/Vivado/data/ip'.
+# set obj [get_projects $proj_name]
+# set_property "default_lib" "xil_defaultlib" $obj
+# set_property "part" $thepart $obj
+# set_property "simulator_language" "Mixed" $obj
+# set_property "source_mgmt_mode" "DisplayOnly" $obj
+# set_property target_language Verilog $obj
+# if {[string equal [get_filesets sources_1] ""]} {
+#   create_fileset -srcset sources_1
+# }
+# set obj [get_filesets sources_1]
+# set_property "edif_extra_search_paths" "[file normalize "$proj_dir/../../core"]" $obj
+# set_property "top" "xillydemo" $obj
+# set obj [get_filesets sources_1]
+# set files [list \
+#  "[file normalize "$proj_dir/../src/xillydemo.v"]"\
+#  "[file normalize "$proj_dir/../src/xillybus.v"]"\
+#  "[file normalize "$proj_dir/../src/xillybus_core.v"]"\
+#  "[file normalize "$essentials_dir/$pcie.v"]"\
+#  "[file normalize "$essentials_dir/${pcie}_pipe_clock.v"]"\
+#  "[file normalize "$essentials_dir/fifo_8x2048/fifo_8x2048.xci"]"\
+#  "[file normalize "$essentials_dir/fifo_32x512/fifo_32x512.xci"]"\
+#  "[file normalize "$essentials_dir/$pcie_vivado/$pcie_vivado.xci"]"\
+# ]
+# add_files -norecurse -fileset $obj $files
+WARNING: [IP_Flow 19-2162] IP 'fifo_8x2048' is locked:
+* IP definition 'FIFO Generator (12.0)' for IP 'fifo_8x2048' (customized with software release 2014.1) has a newer major version in the IP Catalog.
+* IP definition 'FIFO Generator (12.0)' for IP 'fifo_8x2048' (customized with software release 2014.1) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'fifo_32x512' is locked:
+* IP definition 'FIFO Generator (12.0)' for IP 'fifo_32x512' (customized with software release 2014.1) has a newer major version in the IP Catalog.
+* IP definition 'FIFO Generator (12.0)' for IP 'fifo_32x512' (customized with software release 2014.1) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'pcie_k7_vivado' is locked:
+* IP definition '7 Series Integrated Block for PCI Express (3.0)' for IP 'pcie_k7_vivado' (customized with software release 2014.1) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+# upgrade_ip [get_ips]
+Upgrading 'fifo_32x512'
+INFO: [IP_Flow 19-1972] Upgraded fifo_32x512 from FIFO Generator 12.0 to FIFO Generator 13.1
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_32x512'...
+Upgrading 'fifo_8x2048'
+INFO: [IP_Flow 19-1972] Upgraded fifo_8x2048 from FIFO Generator 12.0 to FIFO Generator 13.1
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_8x2048'...
+Upgrading 'pcie_k7_vivado'
+false
+invalid bareword "0xx00"
+in expression "0x00 | 0xx00 | 0xFF0000";
+should be "$0xx00" or "{0xx00}" or "0xx00(...)" or ...
+INFO: [IP_Flow 19-1972] Upgraded pcie_k7_vivado from 7 Series Integrated Block for PCI Express 3.0 to 7 Series Integrated Block for PCI Express 3.3
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pcie_k7_vivado'...
+# generate_target example [get_ips $pcie_vivado]
+WARNING: [Vivado 12-4105] The example target will be deprecated in a future release. Instead, use open_example_project command to get the example design.
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'pcie_k7_vivado'...
+generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 6153.801 ; gain = 5.141 ; free physical = 16558 ; free virtual = 42067
+# file copy "[file normalize "$essentials_dir/$pcie_vivado/example_design/support/${pcie_vivado}_pipe_clock.v"]" "[file normalize "$essentials_dir"]"
+# add_files -norecurse -fileset $obj  "[file normalize "$essentials_dir/${pcie_vivado}_pipe_clock.v"]"
+# if {[string equal [get_filesets constrs_1] ""]} {
+#   create_fileset -constrset constrs_1
+# }
+# set obj [get_filesets constrs_1]
+# add_files -fileset $obj -norecurse "[file normalize "$essentials_dir/xillydemo.xdc"]"
+# if {[string equal [get_filesets sim_1] ""]} {
+#   create_fileset -simset sim_1
+# }
+# set obj [get_filesets sim_1]
+# set obj [get_filesets sim_1]
+# set_property "runtime" "1000 ns" $obj
+# set_property "top" "unknown" $obj
+# set_property "unit_under_test" "UUT" $obj
+# if {[string equal [get_runs synth_1] ""]} {
+#   create_run -name synth_1 -part $thepart -flow {Vivado Synthesis 2014} -strategy "Vivado Synthesis Defaults" -constrset constrs_1
+# }
+# set obj [get_runs synth_1]
+# set_property "part" $thepart $obj
+# if {[string equal [get_runs impl_1] ""]} {
+#   create_run -name impl_1 -part $thepart -flow {Vivado Implementation 2014} -strategy "Vivado Implementation Defaults" -constrset constrs_1 -parent_run synth_1
+# }
+# set obj [get_runs impl_1]
+# set_property "part" $thepart $obj
+# set_property STEPS.PHYS_OPT_DESIGN.IS_ENABLED true $obj
+# set_property STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED true $obj
+# set_property STEPS.WRITE_BITSTREAM.TCL.PRE "$essentials_dir/showstopper.tcl" $obj
+# puts "INFO: Project created: $proj_name"
+INFO: Project created: xillydemo
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_8x2048'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_32x512'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pcie_k7_vivado'...
+[Mon Mar  5 17:16:30 2018] Launched fifo_8x2048_synth_1, fifo_32x512_synth_1, pcie_k7_vivado_synth_1, synth_1...
+Run output will be captured here:
+fifo_8x2048_synth_1: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado/xillydemo.runs/fifo_8x2048_synth_1/runme.log
+fifo_32x512_synth_1: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1/runme.log
+pcie_k7_vivado_synth_1: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado/xillydemo.runs/pcie_k7_vivado_synth_1/runme.log
+synth_1: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Mon Mar  5 17:16:30 2018] Launched impl_1...
+Run output will be captured here: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado/xillydemo.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 6203.512 ; gain = 16.000 ; free physical = 16407 ; free virtual = 41969
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  6 09:35:04 2018...

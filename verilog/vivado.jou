@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.1_sdx (64-bit)
+# SW Build 1915620 on Thu Jun 22 17:54:59 MDT 2017
+# IP Build 1908669 on Thu Jun 22 19:20:41 MDT 2017
+# Start of session at: Mon Mar  5 17:14:02 2018
+# Process ID: 7838
+# Current directory: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog
+# Command line: vivado -source xillydemo-vivado.tcl
+# Log file: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado.log
+# Journal file: /home/cho/hCODE_dev/hFPGA2/shell-kc705-xillybus-ap_fifo128/verilog/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source xillydemo-vivado.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

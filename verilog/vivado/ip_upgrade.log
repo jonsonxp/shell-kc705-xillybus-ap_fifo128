@@ -1,0 +1,25 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1_sdx (lin64) Build 1915620 Thu Jun 22 17:54:59 MDT 2017
+| Date         : Tue Mar  6 09:38:31 2018
+| Host         : tea02 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+----------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_xillybus_128'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_xillybus_128 from xilinx.com:ip:fifo_generator:12.0 to xilinx.com:ip:fifo_generator:13.1 (Rev. 4)
+
+2. Upgrade messages
+-------------------
+
+Added parameter Output_Register_Type with value Embedded_Reg (source 'default')
+Added parameter Enable_Safety_Circuit with value false (source 'default')
+Added parameter Enable_ECC_Type with value Hard_ECC (source 'default')
+Set parameter Slave_interface_Clock_enable_memory_mapped to value false (source 'default')
+Set parameter Master_interface_Clock_enable_memory_mapped to value false (source 'default')
+
